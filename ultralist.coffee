@@ -10,7 +10,7 @@
     transform translateY(-110%)
     opacity: .9
     font-family: Menlo
-    font-size: x-small
+    font-size: small
   """
 
   render: (output) ->
