@@ -7,7 +7,8 @@ from datetime import datetime
 from pprint import pprint
 
 path_to_todos = "/Users/" + getpass.getuser() + "/.todos.json"
-line_spacing  = "10px"
+line_spacing  = "7px"
+id_format     = "{id_val:04d}"
 
 # origin theme
 # color_id      = "#0099FF"
@@ -35,12 +36,7 @@ def printLineEnd ():
 def printID ( id ):
 	out = "<div style=\"display: inline; color: "+color_id+";\">"
 	#format id to have a unified look
-	if( id/10 < 1 ):
-		out += "0"+str(id)+"&nbsp;&nbsp;</div>"
-	elif( id/10 < 10 ):
-		out += str(id)+"&nbsp;&nbsp;</div>"
-	else:
-		out += "</div>"
+	out += id_format.format(id_val = id)+"&nbsp;&nbsp;</div>"
 	return out
 
 def printDue ( due ):

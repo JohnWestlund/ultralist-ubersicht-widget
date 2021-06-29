@@ -3,10 +3,14 @@
   refreshFrequency: 3000
 
   style: """
-    left: 1em
-    top: 0.5em
+    left: 20px
+    top: 100%
+    padding-left: 5px
+    padding-bottom: 20px
+    transform translateY(-110%)
+    opacity: .9
     font-family: Menlo
-    font-size: 1em
+    font-size: x-small
   """
 
   render: (output) ->
